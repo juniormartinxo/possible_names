@@ -13,3 +13,13 @@ minimist@^1.2.0:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+
+slug@5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/slug/-/slug-5.2.0.tgz#92f478dc01eedb6cd14def4c4cfe702409612204"
+  integrity sha512-jMCvtl7B2iF+2YUNeSo88iVy+wSGX2Jlfj6Hi7RvaQNTPiqJ8BYJAB6XaurEQiiVGN3gIj6u6IZvaG4Ang5brw==
+
+utf8@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
+  integrity sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==

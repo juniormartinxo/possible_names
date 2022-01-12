@@ -1,7 +1,9 @@
 const csv = require('csv-parser');
 const fs = require('fs');
+const utf8 = require('utf8')
+var slug = require('slug')
 const results = [];
-const file = './names.csv'
+const file = './possible_names.csv'
 
 fs.createReadStream('alunos.csv')
     .pipe(csv({separator:';'}))
@@ -16,11 +18,19 @@ fs.createReadStream('alunos.csv')
             fs.unlink(file, err=>err)
         }
 
-        possibleNames.map(names=>{
-            const arrNames = Object.values(names)
+        const titleFields = 'Matrícula;Nome completo;Turma;Origem;Nome simples;Nome composto 01;Nome composto 02;Nome composto 03;Nome composto 04;Nome composto 05\n'
 
-            fs.appendFile(file, arrNames.join(';') + "\n", err=>err)
+
+        fs.appendFile(file,titleFields, {encoding: 'utf-8'}, ()=>{
+            possibleNames.map(names=>{
+                const arrNames = Object.values(names)
+    
+                fs.appendFile(file, arrNames.join(';') + "\n", err=>err)
+            })
+
         })
+
+        
     });
 
 function splitName(name){
