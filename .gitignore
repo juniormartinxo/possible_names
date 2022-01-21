@@ -27,4 +27,4 @@ yarn-error.log*
 /.idea
 
 possible_names.csv
-.csv
+table_names.csv
