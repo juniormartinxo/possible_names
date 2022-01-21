@@ -1,7 +1,7 @@
 const csv = require('csv-parser')
 const fs = require('fs')
 const results = []
-const file = './p_names.csv'
+const file = './possible_names.csv'
 
 fs.createReadStream('table_names.csv')
   .pipe(csv({ separator: ';' }))
