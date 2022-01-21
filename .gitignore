@@ -26,5 +26,5 @@ yarn-error.log*
 /.vscode
 /.idea
 
-possible_names.csv
+p_names.csv
 table_names.csv

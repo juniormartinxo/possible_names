@@ -1,9 +1,9 @@
 const csv = require('csv-parser')
 const fs = require('fs')
 const results = []
-const file = './possible_names.csv'
+const file = './p_names.csv'
 
-fs.createReadStream('alunos.csv')
+fs.createReadStream('table_names.csv')
   .pipe(csv({ separator: ';' }))
   .on('data', data => results.push(data))
   .on('end', (path, callback) => {
